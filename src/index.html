@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>parallax</title>
+  <link rel="stylesheet" href="assets/stylesheet/output.css">
+  <link rel="stylesheet" href="assets/stylesheet/master.css">
+  <link rel="stylesheet" href="assets/font/PlayfairDisplay-VariableFont_wght.ttf">
+
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="fixed top-0 left-0 z-50 w-full px-6 py-5 md:px-10">
+    <nav class="flex items-center justify-between">
+      <a href="#" class="text-xl font-medium tracking-[0.35em]">FORGE</a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden items-center gap-8 text-sm uppercase tracking-wider md:flex">
+        <a href="#" class="transition-opacity duration-300 hover:opacity-50"> Home</a>
+        <a href="#builds" class="transition-opacity duration-300 hover:opacity-50">Builds</a>
+        <a href="#stock" class="transition-opacity duration-300 hover:opacity-50">Stock</a>
+        <a href="#contact" class="transition-opacity duration-300 hover:opacity-50">Contact</a>
+      </div>
+      <!-- Menu Button -->
+      <button id="menuButton"
+        class="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
+        aria-label="Open menu">
+        <span class="block h-px w-6 bg-white transition-all duration-300"></span>
+        <span class="block h-px w-6 bg-white transition-all duration-300"></span>
+      </button>
+    </nav>
+  </header>
+  <!-- =========================
+       MOBILE MENU
+  ========================== -->
+
+  <div id="mobileMenu"
+    class="fixed inset-0 z-40 flex translate-x-full flex-col justify-center bg-black px-8 transition-transform duration-500 md:hidden">
+    <div class="flex flex-col gap-8 text-4xl">
+      <a href="#" class="mobile-link">Home</a>
+      <a href="#builds" class="mobile-link">Builds</a>
+      <a href="#stock" class="mobile-link">Stock</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </div>
+  <!-- =========================
+       HERO
+  ========================== -->
+  <main>
+    <section class="hero relative flex min-h-screen items-end overflow-hidden">
+      <!-- Background Image -->
+      <div class="hero-bg absolute inset-0">
+        <img src="assets/img/heroimg1.jpg" alt="Luxury automotive" class="hero-image h-full w-full object-cover">
+        <!-- Overlay -->
+        <div class="hero-overlay absolute inset-0 bg-black/40"></div>
+      </div>
+      <!-- Hero Content -->
+      <div class="hero-content relative z-10 w-full px-6 pb-16 md:px-12 md:pb-20 lg:px-20">
+        <p class="hero-subtitle mb-6 text-xs uppercase tracking-[0.3em] text-white/70">Bespoke Automotive</p>
+        <h1
+          class="hero-title text-5xl font-light leading-[0.9] tracking-tight transition-all duration-1000 sm:text-6xl md:text-8xl lg:text-[9rem]">
+          For Those<br>Who Refuse<br>Ordinary</h1>
+      </div>
+    </section>
+    <!-- =========================
+         INTRO
+    ========================== -->
+    <section class="philosophy-section px-6 py-24 md:px-12 md:py-40 lg:px-20 bg-black/50">
+      <div class="grid gap-12 md:grid-cols-2 md:gap-20">
+        <div class="philosophy-label">
+          <p class="text-5xl md:text-6xl lg:text-7xl uppercase tracking-[0.3em] text-white/50"> Our Philosophy</p>
+        </div>
+        <div class="philosophy-content">
+          <h2 class="philosophy-title text-4xl font-light leading-tight md:text-6xl">
+            <span class="philosophy-word inline-block">
+              Every
+            </span>
+            <span class="philosophy-word inline-block">
+              decision
+            </span>
+            <span class="philosophy-word inline-block">
+              is
+            </span>
+            <span class="philosophy-word inline-block">
+              intentional.
+            </span>
+          </h2>
+          <p class="philosophy-description mt-10 max-w-xl text-base leading-relaxed text-white/50"> A luxury automotive
+            atelier forbespoke styling, performance and craftsmanship.</p>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+         LARGE IMAGE
+    ========================== -->
+    <section class="craftsmanship-section">
+      <div class="craftsmanship-wrapper relative h-[70vh] overflow-hidden md:h-[90vh]">
+        <!-- First Image -->
+        <div class="craft-image image-one absolute inset-0 z-10">
+          <img src="assets/img/hero.jpg" alt="Automotive craftsmanship" class="h-full w-full object-cover">
+          <!-- Dark Overlay -->
+          <div class="absolute inset-0 bg-black/30"></div>
+          <!-- Center Text -->
+          <div class="absolute inset-0 z-10 flex items-center justify-center">
+            <h2
+              class="craft-center-text text-center text-4xl font-light tracking-tight text-white uppercase md:text-6xl lg:text-8xl">
+              we do not modify vehicles<br>
+              we build them for you
+            </h2>
+            <!-- Car Logo Marquee -->
+            <div class="absolute bottom-25 left-0 z-20 w-full overflow-hidden">
+              <div class="car-logo-track flex w-max items-center gap-12">
+                <!-- Set 1 -->
+                <div class="flex items-center gap-12">
+                  <img src="assets/img/car1.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car2.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car3.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car4.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car5.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car6.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car7.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car8.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car9.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car10.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car11.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car12.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car13.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car14.svg" alt="BMW" class="h-7 w-auto opacity-70 md:h-8">
+                </div>
+                <!-- Set 2 - Duplicate -->
+                <div class="flex items-center gap-12" aria-hidden="true">
+                  <img src="assets/img/car1.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car2.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car3.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car4.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car5.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car6.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car7.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car8.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car9.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car10.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car11.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car12.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car13.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                  <img src="assets/img/car14.svg" alt="" class="h-7 w-auto opacity-70 md:h-8">
+                </div>
+              </div>
+              <div
+                class="pointer-events-none absolute inset-y-0 left-0 w-20 bg-linear-to-r from-black/40 to-transparent">
+              </div>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 w-20 bg-linear-to-l from-black/40 to-transparent">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Image -->
+        <div class="craft-image image-two absolute inset-0 z-20">
+          <img src="assets/img/img1.jpg" alt="Automotive performance" class="h-full w-full object-cover">
+          <!-- Overlay -->
+          <div class="absolute inset-0 bg-black/20"></div>
+          <!-- Top Left Text -->
+          <div class="absolute left-6 top-6 z-10 md:left-12 md:top-12 lg:left-20 lg:top-20">
+            <h2
+              class="craft-side-title uppercase max-w-4xl text-5xl font-light leading-28 tracking-tight text-white sm:text-6xl md:text-8xl">
+              our approach<br> to every build</h2>
+          </div>
+          <!-- Bottom Right Content -->
+          <div
+            class="absolute bottom-8 right-6 z-10 max-w-sm text-right md:bottom-12 md:right-12 lg:bottom-20 lg:right-20">
+            <p class="craft-side-description text-sm leading-relaxed text-white/60 md:text-base"> Every detail has a
+              purpose. From precision engineering to bespoke finishing, every build is made without compromise.</p>
+            <a href="#projects"
+              class="craft-side-button mt-6 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+              <span>Explore Build</span>
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+         APPROACH
+    ========================== -->
+    <section class="approach-slider relative overflow-hidden">
+      <!-- ======================================== -->
+      <!-- BLURRED BACKGROUND -->
+      <!-- ======================================== -->
+      <div class="approach-background absolute inset-0">
+        <!-- Background 01 -->
+        <div class="approach-bg approach-bg-1 absolute inset-0">
+          <img src="assets/img/img4.jpg" alt="" class="h-full w-full scale-100 object-cover blur-[1px]">
+          <div class="absolute inset-0 bg-black/70"></div>
+        </div>
+        <!-- Background 02 -->
+        <div class="approach-bg approach-bg-2 absolute inset-0 opacity-0">
+          <img src="assets/img/img2.jpg" alt="" class="h-full w-full scale-100 object-cover blur-[1px]">
+          <div class="absolute inset-0 bg-black/70"></div>
+        </div>
+        <!-- Background 03 -->
+        <div class="approach-bg approach-bg-3 absolute inset-0 opacity-0">
+          <img src="assets/img/img3.jpg" alt="" class="h-full w-full scale-100 object-cover blur-[1px]">
+          <div class="absolute inset-0 bg-black/70"></div>
+        </div>
+      </div>
+      <!-- ======================================== -->
+      <!-- SLIDER -->
+      <!-- ======================================== -->
+      <div class="approach-wrapper relative h-screen w-full">
+        <!-- ====================================== -->
+        <!-- SLIDE 01 -->
+        <!-- ====================================== -->
+        <article class="approach-slide approach-slide-1 absolute inset-0 flex items-center px-6 md:px-12 lg:px-20">
+          <div class="grid w-full grid-cols-1 items-center gap-6 md:grid-cols-[0.8fr_1fr] md:gap-10 lg:gap-14">
+            <!-- LEFT IMAGE -->
+            <div class="approach-image-wrapper relative overflow-hidden w-full max-w-[80%] md:max-w-[520px]">
+              <img src="assets/img/img4.jpg" alt="Identity"
+                class="approach-image h-[45vh] w-full object-cover md:h-[65vh]">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <!-- RIGHT CONTENT -->
+            <div class="approach-content relative max-w-xl">
+              <p class="approach-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">01 / 03</p>
+              <h2
+                class="approach-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-[7rem]">
+                Identity</h2>
+              <p class="approach-description mt-8 max-w-lg text-sm leading-relaxed text-white/60 md:text-base"> Every
+                build begins with the person behind the wheel, shaped around their individual taste, lifestyle, presence
+                and personal sense of identity on the road.
+              </p>
+              <a href="#contact"
+                class="approach-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                <span>Start Your Project</span>
+                <span
+                  class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- ====================================== -->
+        <!-- SLIDE 02 -->
+        <!-- ====================================== -->
+        <article class="approach-slide approach-slide-2 absolute inset-0 flex items-center px-6 md:px-12 lg:px-20">
+          <div class="grid w-full grid-cols-1 items-center gap-6 md:grid-cols-[0.8fr_1fr] md:gap-10 lg:gap-14">
+            <!-- LEFT IMAGE -->
+            <div class="approach-image-wrapper relative overflow-hidden w-full max-w-[80%] md:max-w-[520px]">
+              <img src="assets/img/img2.jpg" alt="Insight"
+                class="approach-image h-[45vh] w-full object-cover md:h-[65vh]">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <!-- RIGHT CONTENT -->
+            <div class="approach-content relative max-w-xl">
+              <p class="approach-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">02 / 03</p>
+              <h2
+                class="approach-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-[7rem]">
+                Insight</h2>
+              <p class="approach-description mt-8 max-w-lg text-sm leading-relaxed text-white/60 md:text-base">
+                Exterior, interior and performance are brought
+                together through a considered, detail-led approach,
+                creating one complete and fully resolved vision.
+              </p>
+              <a href="#contact"
+                class="approach-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                <span>Start Your Project</span>
+                <span
+                  class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">
+                  ↗
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- ====================================== -->
+        <!-- SLIDE 03 -->
+        <!-- ====================================== -->
+        <article class="approach-slide approach-slide-3 absolute inset-0 flex items-center px-6 md:px-12 lg:px-20">
+          <div class="grid w-full grid-cols-1 items-center gap-6 md:grid-cols-[0.8fr_1fr] md:gap-10 lg:gap-14">
+            <!-- LEFT IMAGE -->
+            <div class="approach-image-wrapper relative overflow-hidden w-full max-w-[80%] md:max-w-[520px]">
+              <img src="assets/img/img3.jpg" alt="Cohesion"
+                class="approach-image h-[45vh] w-full object-cover md:h-[65vh]">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <!-- RIGHT CONTENT -->
+            <div class="approach-content relative max-w-xl">
+              <p class="approach-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">03 / 03</p>
+              <h2
+                class="approach-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-[7rem]">
+                Cohesion</h2>
+              <p class="approach-description mt-8 max-w-lg text-sm leading-relaxed text-white/60 md:text-base">
+                Every modification is chosen with precision,
+                ensuring each detail adds purpose, balance and
+                distinction to the final bespoke automotive build.
+              </p>
+              <a href="#contact"
+                class="approach-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                <span>Start Your Project</span>
+                <span
+                  class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">
+                  ↗
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- ======================================== -->
+      <!-- SMALL PROGRESS INDICATOR -->
+      <!-- ======================================== -->
+      <div
+        class="absolute bottom-8 right-6 z-30 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-white/40 md:right-12">
+        <span class="approach-progress-current text-white">
+          01
+        </span>
+        <span>/</span>
+        <span>03</span>
+      </div>
+    </section>
+    <!-- =========================
+           SERVICES INTRO
+      ========================== -->
+    <section class="services-section px-6 py-24 md:px-12 md:py-40 lg:px-20 bg-black">
+      <div class="grid items-center gap-14 md:grid-cols-2 md:gap-20 lg:gap-28">
+        <!-- ================================= -->
+        <!-- LEFT CONTENT -->
+        <!-- ================================= -->
+        <div class="services-content">
+          <p class="mb-8 text-lg uppercase tracking-[0.3em] text-white/20">Services</p>
+          <!-- Animated Title -->
+          <h2
+            class="services-title max-w-2xl text-5xl font-light uppercase leading-[0.95] tracking-tight md:text-6xl lg:text-7xl">
+            <span class="services-word">A</span>
+            <span class="services-word">vehicle</span>
+            <span class="services-word">should</span>
+            <span class="services-word">say</span>
+            <span class="services-word">something</span>
+            <span class="services-word">before</span>
+            <span class="services-word">it</span>
+            <span class="services-word">moves.</span>
+          </h2>
+          <!-- Description -->
+          <p class="services-description mt-8 max-w-xl text-sm leading-relaxed text-white/50 md:text-base">
+            Every line, material and finish is considered.
+            Each detail sharpens the vehicle's character
+            without overpowering it.</p>
+          <!-- Button -->
+          <a href="#contact"
+            class="services-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+            <span>Explore Services</span>
+            <span
+              class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+          </a>
+        </div>
+        <!-- ================================= -->
+        <!-- RIGHT IMAGE -->
+        <!-- ================================= -->
+        <div class="services-image-wrapper relative overflow-hidden">
+          <img src="assets/img/img13.jpg" alt="Automotive craftsmanship"
+            class="services-image h-[55vh] w-full object-contain md:h-[70vh]">
+          <div class="absolute inset-0 bg-black/10"></div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+           SERVICES
+      ========================== -->
+    <section class="services-showcase relative overflow-hidden">
+      <!-- ======================================== -->
+      <!-- FIXED BACKGROUND -->
+      <!-- ======================================== -->
+      <div class="services-fixed-bg fixed -z-10 inset-0">
+        <img src="assets/img/hero.jpg" alt="" class="h-full w-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-black/5"></div>
+      </div>
+      <!-- ======================================== -->
+      <!-- PINNED WRAPPER -->
+      <!-- ======================================== -->
+      <div class="services-showcase-wrapper relative h-screen w-full">
+        <div class="grid h-full w-full grid-cols-1 md:grid-cols-2">
+          <!-- ====================================== -->
+          <!-- LEFT CONTENT -->
+          <!-- ====================================== -->
+          <div class="services-info relative h-full overflow-hidden">
+            <!-- SLIDE 01 -->
+            <article class="service-info-slide absolute inset-0 flex items-center px-6 md:px-10 lg:px-20">
+              <div class="service-info-content max-w-xl">
+                <p class="service-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">01 / 06</p>
+                <h2
+                  class="service-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-8xl">
+                  Bodystyling</h2>
+                <p class="service-description mt-8 max-w-lg text-sm leading-relaxed text-white/50 md:text-base">
+                  Sculpting the exterior with precision and purpose, creating a stronger presence while preserving the
+                  original character of the vehicle.</p>
+                <a href="#contact"
+                  class="service-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                  <span>Explore Service</span>
+                  <span
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+                </a>
+              </div>
+            </article>
+            <!-- SLIDE 02 -->
+            <article class="service-info-slide absolute inset-0 flex items-center px-6 md:px-10 lg:px-20">
+              <div class="service-info-content max-w-xl">
+                <p class="service-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">02 / 06</p>
+                <h2
+                  class="service-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-[7rem]">
+                  Interior</h2>
+                <p class="service-description mt-8 max-w-lg text-sm leading-relaxed text-white/50 md:text-base"> Refined
+                  materials, considered details and a carefully balanced atmosphere designed around the driver and the
+                  experience inside the vehicle.</p>
+                <a href="#contact"
+                  class="service-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                  <span>Explore Service</span>
+                  <span
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+                </a>
+              </div>
+            </article>
+            <!-- SLIDE 03 -->
+            <article class="service-info-slide absolute inset-0 flex items-center px-6 md:px-10 lg:px-20">
+              <div class="service-info-content max-w-xl">
+                <p class="service-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">03 / 06</p>
+                <h2
+                  class="service-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-[7rem]">
+                  Wheels</h2>
+                <p class="service-description mt-8 max-w-lg text-sm leading-relaxed text-white/50 md:text-base"> Wheel
+                  design selected to complement the proportions, stance and personality of every individual build.</p>
+                <a href="#contact"
+                  class="service-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                  <span>Explore Service</span>
+                  <span
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+                </a>
+              </div>
+            </article>
+            <!-- SLIDE 04 -->
+            <article class="service-info-slide absolute inset-0 flex items-center px-6 md:px-10 lg:px-20">
+              <div class="service-info-content max-w-xl">
+                <p class="service-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">04 / 06</p>
+                <h2
+                  class="service-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-[7rem]">
+                  Lighting</h2>
+                <p class="service-description mt-8 max-w-lg text-sm leading-relaxed text-white/50 md:text-base">
+                  Subtle lighting enhancements that sharpen the
+                  visual identity of the vehicle and transform its
+                  presence after dark.
+                </p>
+                <a href="#contact"
+                  class="service-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                  <span>Explore Service</span>
+                  <span
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+                </a>
+              </div>
+            </article>
+            <!-- SLIDE 05 -->
+            <article class="service-info-slide absolute inset-0 flex items-center px-6 md:px-10 lg:px-20">
+              <div class="service-info-content max-w-xl">
+                <p class="service-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">05 / 06</p>
+                <h2
+                  class="service-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-[7rem]">
+                  Exhaust</h2>
+                <p class="service-description mt-8 max-w-lg text-sm leading-relaxed text-white/50 md:text-base">
+                  Performance-focused exhaust solutions engineered
+                  to bring together sound, response and unmistakable
+                  character.
+                </p>
+                <a href="#contact"
+                  class="service-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                  <span>Explore Service</span>
+                  <span
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+                </a>
+              </div>
+            </article>
+            <!-- SLIDE 06 -->
+            <article class="service-info-slide absolute inset-0 flex items-center px-6 md:px-10 lg:px-20">
+              <div class="service-info-content max-w-xl">
+                <p class="service-number mb-6 text-xs uppercase tracking-[0.3em] text-white/40">06 / 06</p>
+                <h2
+                  class="service-title text-5xl font-light uppercase leading-[0.9] tracking-tight text-white md:text-7xl lg:text-[7rem]">
+                  Protection</h2>
+                <p class="service-description mt-8 max-w-lg text-sm leading-relaxed text-white/50 md:text-base">
+                  Advanced protection designed to preserve every
+                  surface while maintaining the quality and finish
+                  of the completed build.
+                </p>
+                <a href="#contact"
+                  class="service-button group mt-8 inline-flex items-center gap-4 text-xs uppercase tracking-[0.25em] text-white">
+                  <span>Explore Service</span>
+                  <span
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 transition-all duration-300 group-hover:bg-white group-hover:text-black">↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+          <!-- ====================================== -->
+          <!-- RIGHT IMAGE -->
+          <!-- ====================================== -->
+          <div class="services-visual relative h-full overflow-hidden">
+            <!-- IMAGE 01 -->
+            <div class="service-image-slide absolute inset-0">
+              <img src="assets/img/img5.png" alt="Bodystyling" class="service-image h-full w-full object-cover">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <!-- IMAGE 02 -->
+            <div class="service-image-slide absolute inset-0">
+              <img src="assets/img/img6.jpg" alt="Interior" class="service-image h-full w-full object-cover">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <!-- IMAGE 03 -->
+            <div class="service-image-slide absolute inset-0">
+              <img src="assets/img/img7.jpg" alt="Wheels" class="service-image h-full w-full object-cover">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <!-- IMAGE 04 -->
+            <div class="service-image-slide absolute inset-0">
+              <img src="assets/img/img15.jpg" alt="Lighting" class="service-image h-full w-full object-cover">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <!-- IMAGE 05 -->
+            <div class="service-image-slide absolute inset-0">
+              <img src="assets/img/img9.jpg" alt="Exhaust" class="service-image h-full w-full object-cover">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+            <!-- IMAGE 06 -->
+            <div class="service-image-slide absolute inset-0">
+              <img src="assets/img/img10.jpg" alt="Protection" class="service-image h-full w-full object-cover">
+              <div class="absolute inset-0 bg-black/10"></div>
+            </div>
+          </div>
+        </div>
+        <!-- ======================================== -->
+        <!-- PROGRESS -->
+        <!-- ======================================== -->
+
+        <div
+          class="absolute bottom-8 right-6 z-30 flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-white/40 md:bottom-10 md:right-10">
+
+          <span class="services-current text-white">
+            01
+          </span>
+
+          <span>/</span>
+
+          <span>06</span>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- =========================
+           STATEMENT
+      ========================== -->
+    <!-- ========================================
+     FINAL / ORDINARY ENDS HERE
+======================================== -->
+
+    <section class="final-section relative h-screen overflow-hidden bg-black">
+      <!-- FIXED BACKGROUND -->
+      <div class="final-background fixed inset-0 -z-10">
+        <img src="assets/img/hero.jpg" alt="" class="h-full w-full object-cover">
+        <div class="absolute inset-0 bg-black/65"></div>
+      </div>
+      <!-- PINNED CONTENT -->
+      <div class="final-wrapper relative h-screen w-full overflow-hidden">
+        <!-- ==================================
+         ORDINARY
+    ================================== -->
+        <div class="final-title absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+          <p class="final-ordinary mb-6 text-6xl md:text-8xl uppercase tracking-[0.4em] text-white/60">Ordinary</p>
+          <h2 class="final-ends text-6xl font-light tracking-tight md:text-9xl">Ends Here</h2>
+        </div>
+        <!-- ==================================
+         LEFT IMAGE
+    ================================== -->
+        <div class="final-image final-image-left absolute bottom-0 left-[5%] z-20 h-[120vh] w-[27vw]">
+          <img src="assets/img/img16.png" alt="" class="h-full w-full">
+        </div>
+        <!-- ==================================
+         CENTER IMAGE
+    ================================== -->
+        <div class="final-image final-image-center absolute bottom-0 left-1/2 z-30 h-[125vh] w-[32vw] -translate-x-1/2">
+          <img src="assets/img/img12.png" alt="" class="h-full w-full">
+        </div>
+        <!-- ==================================
+         RIGHT IMAGE
+    ================================== -->
+        <div class="final-image final-image-right absolute bottom-0 right-[5%] z-20 h-[120vh] w-[27vw]">
+          <img src="assets/img/img17.png" alt="" class="h-full w-full">
+        </div>
+        <!-- ==================================
+         THE END
+    ================================== -->
+        <div class="final-the-end absolute bottom-[-20%] left-1/2 z-40 -translate-x-1/2 whitespace-nowrap text-center">
+          <p class="text-6xl font-light uppercase tracking-tight text-white md:text-[9rem]">The End</p>
+        </div>
+      </div>
+    </section>
+    <section class="w-full h-[380vh] bg-black"></section>
+    <!-- ========================================
+     FOOTER
+======================================== -->
+<footer class="relative overflow-hidden bg-black text-white px-10">
+  <!-- TOP LINE -->
+  <div class="h-px w-full bg-white/10"></div>
+
+  <!-- MAIN FOOTER -->
+  <div class="px-6 py-20 md:px-12 md:py-28 lg:px-20">
+    <div class="grid gap-16 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_0.7fr]">
+      <!-- ==================================
+           BRAND / IMAGE
+      ================================== -->
+      <div class="flex flex-col justify-between">
+        <!-- IMAGE / LOGO -->
+        <div class="mb-10 h-50 w-50 overflow-hidden md:h-55 md:w-55">
+          <img src="assets/img/yasaman.png" alt="Brand" class="h-full w-full object-cover">
+        </div>
+        <!-- BRAND NAME -->
+
+        <div>
+          <h2 class="text-4xl font-light uppercase tracking-tight md:text-5xl">
+            Yasaman mirzaei
+          </h2>
+
+          <p class="mt-5 max-w-md text-sm leading-relaxed text-white/45">
+           Front-End Developer.
+            Every build is created with purpose and individuality.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================
+           NAVIGATION
+      ================================== -->
+      <div>
+        <p class="mb-8 text-xs uppercase tracking-[0.35em] text-white/40">Navigation</p>
+        <nav class="flex flex-col gap-4">
+          <a href="#home" class="group flex items-center justify-between border-b border-white/10 pb-3 text-sm text-white/70 transition-colors duration-300 hover:text-white">
+            <span>Home</span>
+            <span class="opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"> ↗</span>
+          </a>
+          <a href="#about" class="group flex items-center justify-between border-b border-white/10 pb-3 text-sm text-white/70 transition-colors duration-300 hover:text-white">
+            <span>About</span>
+            <span class="opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">↗</span>
+          </a>
+          <a href="#services" class="group flex items-center justify-between border-b border-white/10 pb-3 text-sm text-white/70 transition-colors duration-300 hover:text-white">
+            <span>Services</span>
+            <span class="opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">↗</span>
+          </a>
+          <a href="#projects" class="group flex items-center justify-between border-b border-white/10 pb-3 text-sm text-white/70 transition-colors duration-300 hover:text-white">
+            <span>Projects</span>
+            <span class="opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">↗</span>
+          </a>
+          <a href="#contact" class="group flex items-center justify-between border-b border-white/10 pb-3 text-sm text-white/70 transition-colors duration-300 hover:text-white">
+            <span>Contact</span>
+            <span class="opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100">↗</span>
+          </a>
+        </nav>
+      </div>
+      <!-- ==================================
+           SOCIAL / CONTACT
+      ================================== -->
+      <div>
+        <p class="mb-8 text-xs uppercase tracking-[0.35em] text-white/40">Connect</p>
+        <!-- SOCIALS -->
+        <div class="flex flex-col gap-4">
+          <a href="https://www.instagram.com/yasaman_dev?igsh=MWZkMGNmazlidTV3cQ==" class="group flex items-center gap-4 text-sm text-white/60 transition-colors duration-300 hover:text-white">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 transition-all duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">IG</span>
+              <span>Instagram</span></a>
+  
+  
+            <a href="https://www.linkedin.com/in/yasaman-mirzaei-b9499537b" class="group flex items-center gap-4 text-sm text-white/60 transition-colors duration-300 hover:text-white">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 transition-all duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">LI
+              </span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/yasamanmrz" class="group flex items-center gap-4 text-sm text-white/60 transition-colors duration-300 hover:text-white">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 transition-all duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black">GI
+              </span>
+              <span>GitHub</span>
+            </a>
+          </div>
+  
+          <!-- EMAIL -->
+          <div class="mt-12">
+            <p class="mb-3 text-xs uppercase tracking-[0.3em] text-white/30">
+              Email
+            </p>
+            <a href="mailto:hello@example.com" class="text-sm text-white/70 transition-colors duration-300 hover:text-white">
+              yasamanmirzaei1997@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================
+         BOTTOM
+    ======================================== -->
+  
+    <div class="border-t border-white/10 px-6 py-6 md:px-12 lg:px-20">
+      <div class="flex flex-col gap-4 text-xs text-white/30 md:flex-row md:items-center md:justify-between">
+        <p>
+          © 2026 Yasaman mirzaei. All rights reserved.
+        </p>
+        <p class="uppercase tracking-[0.25em]">
+          Crafted with purpose
+        </p>
+        <a href="#" class="transition-colors duration-300 hover:text-white">
+          Back to top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+   
+</body>
+
+
+<script src="assets/library/gsap.min.js"></script>
+<script src="assets/library/TextPlugin.min.js"></script>
+<script src="assets/library/ScrollTrigger.min.js"></script>
+<script src="assets/js/master.js"></script>
+
+</html>

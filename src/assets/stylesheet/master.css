@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Fair';
+    src: url('./../font/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: 'Fair';
+}
+
+.car-logo-track {
+    animation: carLogoScroll 25s linear infinite;
+  }
+  
+  @keyframes carLogoScroll {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Hide scrollbar but keep scrolling */
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
